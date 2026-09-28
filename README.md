@@ -6,7 +6,7 @@
 
 [ダウンロードはこちら．](https://github.com/sigma-axis/aviutl2_script_SceneChangeKit_S/releases) [紹介動画．](https://www.nicovideo.jp/shorts/ss46859392)
 
-TODO: image of timeline.
+![タイムラインでの配置例](https://github.com/user-attachments/assets/5aaaa3be-7f0b-4448-b062-09deaf499fc8)
 
 ##  お願い
 
@@ -48,7 +48,7 @@ Although, usage documentations for this script in languages other than Japanese 
 1.  「前シーン」オブジェクトにはフィルタ効果などでアニメーションを設定して，時間経過で隠れるように．
 1.  「次シーン」オブジェクトにもフィルタ効果などでアニメーションを設定して，時間経過で現れるように．
 
-TODO: image of timeline.
+![タイムラインでの配置例](https://github.com/user-attachments/assets/5aaaa3be-7f0b-4448-b062-09deaf499fc8)
 
 > [!TIP]
 > 「前シーン」や「次シーン」は複数レイヤーにまたがって複数設置可能なので，複数レイヤーを組み合わせた複雑な表現も可能です．
