@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/karoterra/aviutl2-aulua/refs/heads/main/schema/aulua.schema.json
+project:
+  variables:
+    NAME: SceneChangeKit_S
+    AUTHOR: σ軸
+    PUBLISH_PAGE: https://github.com/sigma-axis/aviutl2_script_SceneChangeKit_S
+    LEAST_AVIUTL_VERSION: "2010800"
+    LEAST_AVIUTL_VERSION_STRING: "2.1.8"
+
+package:
+  id: SceneChangeKit_S
+  name: シーンチェンジ自作キット SceneChangeKit_S
+  version: v1.00-rc
+  information: "{name} {version} by {AUTHOR}"
+  script_sub_dir: "{id}"
+  uninstall_sub_folder_file: false
+  message:
+    text: |
+      # SceneChangeKit_S AviUtl ExEdit2 シーンチェンジ自作キット
+
+      スクリプトを書かなくてもシーンチェンジをタイムライン上で構成して自作できるスクリプトです．前シーンと次シーンをレイヤーに配置してフィルタ効果などを追加していくことができます．
+
+      公開ページ:
+      https://github.com/sigma-axis/aviutl2_script_SceneChangeKit_S
+
+      紹介動画:
+      https://www.nicovideo.jp/watch/ss46859392
+
+      お願い:
+      ニコニコ動画での親作品登録をしていただけると励みになります．
+      作品 ID: ss46859392
+
+  assets:
+    - src: README.md
+      dest: Script/{id}/README.md
+    - src: LICENSE
+      dest: Script/{id}/LICENSE
+  file_name: package.au2pkg.zip
+
+build:
+  out_dir: build
+
+scripts:
+  - name: "@SceneChangeKit_S.scn2"
+    sources:
+      - path: script/preamble.lua
+      - label: 自作シーンチェンジ
+        path: script/save.lua
+
+  - name: "@SceneChangeKit_S.obj2"
+    sources:
+      - path: script/preamble.lua
+      - label: 前シーン
+        path: script/prev.lua
+      - label: 次シーン
+        path: script/next.lua
+
+language:
+  files:
+    - path: build/Default.SceneChangeKit_S.aul2
+      text: false
+      tooltip: true
