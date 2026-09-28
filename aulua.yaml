@@ -10,7 +10,7 @@ project:
 package:
   id: SceneChangeKit_S
   name: シーンチェンジ自作キット SceneChangeKit_S
-  version: v1.00-rc
+  version: v1.00
   information: "{name} {version} by {AUTHOR}"
   script_sub_dir: "{id}"
   uninstall_sub_folder_file: false
